@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cart | Ripped to Shreds Wireframe</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-bar">
+      <button class="btn menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a class="logo ph" href="index.html" aria-label="Ripped to Shreds home">Logo Asset</a>
+
+      <div class="utility">
+        <a class="btn" href="shop.html" aria-label="Search">Q</a>
+        <a class="btn" href="cart.html" aria-label="Cart, 0 items"><span class="cart-count">0</span></a>
+      </div>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="drops.html">Drops</a></li>
+          <li><a href="bands.html">Bands</a></li>
+          <li><a href="trade.html">Trade</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Cart</li></ol></nav>
+      <h1>Cart</h1>
+      <p>00 items. One-of-one pieces are held for a limited time.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-label="Cart contents">
+    <div class="wrap">
+      <div class="cart-layout">
+        <ul class="line-items">
+        <li class="line-item">
+          <div class="ph" role="img" aria-label="Product image placeholder">Image</div>
+          <div class="line-meta">
+            <span class="card-tag" style="align-self:flex-start;">Tag</span>
+            <h3><a href="product.html">Product Title</a></h3>
+            <span class="card-meta">Size / Condition</span>
+            <span class="card-price">$00</span>
+          </div>
+          <div class="line-actions">
+            <button class="btn btn--sm" type="button">Remove</button>
+          </div>
+        </li>
+        <li class="line-item">
+          <div class="ph" role="img" aria-label="Product image placeholder">Image</div>
+          <div class="line-meta">
+            <span class="card-tag" style="align-self:flex-start;">Tag</span>
+            <h3><a href="product.html">Product Title</a></h3>
+            <span class="card-meta">Size / Condition</span>
+            <span class="card-price">$00</span>
+          </div>
+          <div class="line-actions">
+            <button class="btn btn--sm" type="button">Remove</button>
+          </div>
+        </li>
+        <li class="line-item">
+          <div class="ph" role="img" aria-label="Product image placeholder">Image</div>
+          <div class="line-meta">
+            <span class="card-tag" style="align-self:flex-start;">Tag</span>
+            <h3><a href="product.html">Product Title</a></h3>
+            <span class="card-meta">Size / Condition</span>
+            <span class="card-price">$00</span>
+          </div>
+          <div class="line-actions">
+            <button class="btn btn--sm" type="button">Remove</button>
+          </div>
+        </li>
+        </ul>
+
+        <aside class="summary" aria-labelledby="sum-title">
+          <h2 id="sum-title">Summary</h2>
+          <div class="summary-row"><span>Subtotal</span><span>$00</span></div>
+          <div class="summary-row"><span>Shipping</span><span>$00</span></div>
+          <div class="summary-row"><span>Tax</span><span>$00</span></div>
+          <div class="summary-row summary-row--total"><span>Total</span><span>$00</span></div>
+          <div class="field">
+            <label for="promo">Promo Code</label>
+            <input id="promo" type="text">
+          </div>
+          <a class="btn btn--solid btn--block" href="checkout.html">Checkout</a>
+          <a class="btn btn--block" href="shop.html">Keep Shopping</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>Visit</h2>
+        <p>Street Address<br>City, State ZIP<br>Hours placeholder</p>
+      </div>
+      <div class="footer-col">
+        <h2>Shop</h2>
+        <a href="shop.html">All Products</a>
+        <a href="drops.html">Drops</a>
+        <a href="trade.html">Trade In</a>
+      </div>
+      <div class="footer-col">
+        <h2>Help</h2>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+      </div>
+      <div class="footer-col">
+        <h2>Newsletter</h2>
+        <form class="newsletter" action="#" method="post">
+          <label for="email" class="visually-hidden">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" autocomplete="email">
+          <button class="btn btn--solid" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <p class="legal">&copy; Ripped to Shreds. Wireframe placeholder.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

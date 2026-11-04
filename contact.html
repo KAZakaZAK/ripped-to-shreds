@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Ripped to Shreds Wireframe</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-bar">
+      <button class="btn menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a class="logo ph" href="index.html" aria-label="Ripped to Shreds home">Logo Asset</a>
+
+      <div class="utility">
+        <a class="btn" href="shop.html" aria-label="Search">Q</a>
+        <a class="btn" href="cart.html" aria-label="Cart, 0 items"><span class="cart-count">0</span></a>
+      </div>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="drops.html">Drops</a></li>
+          <li><a href="bands.html">Bands</a></li>
+          <li><a href="trade.html">Trade</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol></nav>
+      <h1>Contact</h1>
+      <p>Questions, consignment pitches, band collabs and order help.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-label="Contact form">
+    <div class="wrap">
+      <div class="split split--wide-left">
+        <form class="form" action="#" method="post">
+          <div class="field-row">
+            <div class="field"><label for="k-name">Name</label><input id="k-name" type="text" autocomplete="name"></div>
+            <div class="field"><label for="k-email">Email</label><input id="k-email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="field">
+            <label for="k-topic">Topic</label>
+            <select id="k-topic">
+              <option>Order Help</option>
+              <option>Consignment</option>
+              <option>Band Collab</option>
+              <option>Press</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label for="k-msg">Message</label><textarea id="k-msg"></textarea></div>
+          <button class="btn btn--solid" type="submit">Send</button>
+        </form>
+
+        <div class="panel">
+          <h3>Direct</h3>
+          <ul>
+            <li>Email placeholder</li>
+            <li>Phone placeholder</li>
+            <li>Instagram placeholder</li>
+          </ul>
+          <h3>Find Us</h3>
+          <p>Street Address<br>City, State ZIP</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>Visit</h2>
+        <p>Street Address<br>City, State ZIP<br>Hours placeholder</p>
+      </div>
+      <div class="footer-col">
+        <h2>Shop</h2>
+        <a href="shop.html">All Products</a>
+        <a href="drops.html">Drops</a>
+        <a href="trade.html">Trade In</a>
+      </div>
+      <div class="footer-col">
+        <h2>Help</h2>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+      </div>
+      <div class="footer-col">
+        <h2>Newsletter</h2>
+        <form class="newsletter" action="#" method="post">
+          <label for="email" class="visually-hidden">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" autocomplete="email">
+          <button class="btn btn--solid" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <p class="legal">&copy; Ripped to Shreds. Wireframe placeholder.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

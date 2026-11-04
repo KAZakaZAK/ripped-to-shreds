@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trade In | Ripped to Shreds Wireframe</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-bar">
+      <button class="btn menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a class="logo ph" href="index.html" aria-label="Ripped to Shreds home">Logo Asset</a>
+
+      <div class="utility">
+        <a class="btn" href="shop.html" aria-label="Search">Q</a>
+        <a class="btn" href="cart.html" aria-label="Cart, 0 items"><span class="cart-count">0</span></a>
+      </div>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="drops.html">Drops</a></li>
+          <li><a href="bands.html">Bands</a></li>
+          <li><a href="trade.html" aria-current="page">Trade</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Trade</li></ol></nav>
+      <h1>Trade In</h1>
+      <p>Bring in your old gear. Walk out with cash or store credit. Policy intro placeholder.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head"><h2 id="how-title">How It Works</h2></div>
+      <ol class="steps">
+        <li><h3>Pack It</h3><p>Step description placeholder.</p></li>
+        <li><h3>Bring It</h3><p>Step description placeholder.</p></li>
+        <li><h3>We Look</h3><p>Step description placeholder.</p></li>
+        <li><h3>Get Paid</h3><p>Step description placeholder.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--alt" aria-label="What we take">
+    <div class="wrap">
+      <div class="split">
+        <div class="panel">
+          <h3>We Take</h3>
+          <ul>
+            <li>Item type placeholder</li>
+            <li>Item type placeholder</li>
+            <li>Item type placeholder</li>
+            <li>Item type placeholder</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>We Pass On</h3>
+          <ul>
+            <li>Item type placeholder</li>
+            <li>Item type placeholder</li>
+            <li>Item type placeholder</li>
+            <li>Item type placeholder</li>
+          </ul>
+        </div>
+      </div>
+      <div class="split" style="margin-top:24px;">
+        <div class="panel">
+          <h3>Payout</h3>
+          <div class="hours">
+            <div><span>Cash</span><span>00%</span></div>
+            <div><span>Store Credit</span><span>00%</span></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Trade Days</h3>
+          <p>Days, hours and walk in policy placeholder.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="pre-title">
+    <div class="wrap">
+      <div class="split split--wide-left">
+        <div class="prose">
+          <h2 id="pre-title">Pre-Submit</h2>
+          <p>Optional form so we can preview your pile before you come in.</p>
+        </div>
+        <form class="form" action="#" method="post" enctype="multipart/form-data">
+          <div class="field"><label for="t-name">Name</label><input id="t-name" type="text" autocomplete="name"></div>
+          <div class="field"><label for="t-email">Email</label><input id="t-email" type="email" autocomplete="email"></div>
+          <div class="field">
+            <label for="t-type">Item Type</label>
+            <select id="t-type"><option>Tees</option><option>Denim</option><option>Jackets</option><option>Other</option></select>
+          </div>
+          <div class="field"><label for="t-photos">Photos</label><input id="t-photos" type="file" multiple></div>
+          <div class="field"><label for="t-notes">Notes</label><textarea id="t-notes"></textarea></div>
+          <button class="btn btn--solid" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>Visit</h2>
+        <p>Street Address<br>City, State ZIP<br>Hours placeholder</p>
+      </div>
+      <div class="footer-col">
+        <h2>Shop</h2>
+        <a href="shop.html">All Products</a>
+        <a href="drops.html">Drops</a>
+        <a href="trade.html">Trade In</a>
+      </div>
+      <div class="footer-col">
+        <h2>Help</h2>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+      </div>
+      <div class="footer-col">
+        <h2>Newsletter</h2>
+        <form class="newsletter" action="#" method="post">
+          <label for="email" class="visually-hidden">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" autocomplete="email">
+          <button class="btn btn--solid" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <p class="legal">&copy; Ripped to Shreds. Wireframe placeholder.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
