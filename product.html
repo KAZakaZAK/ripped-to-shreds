@@ -1,191 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Product | Ripped to Shreds Wireframe</title>
-<link rel="stylesheet" href="styles.css">
+<title>Band Tee | Ripped to Shreds</title>
+<meta name="description" content="Product detail.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;600;700&amp;family=Archivo+Black&amp;family=Road+Rage&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
+<div class="rts">
 
-<a class="skip" href="#main">Skip to content</a>
+<div class="strip">Store hours: Tue-Sat 11-7 / Sun 12-6 / Mon closed for buying</div>
 
-<header class="site-header">
-  <div class="wrap">
-    <div class="header-bar">
-      <button class="btn menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-
-      <a class="logo ph" href="index.html" aria-label="Ripped to Shreds home">Logo Asset</a>
-
-      <div class="utility">
-        <a class="btn" href="search.html" aria-label="Search">Q</a>
-        <a class="btn" href="account.html" aria-label="Account">A</a>
-        <a class="btn" href="cart.html" aria-label="Cart, 0 items"><span class="cart-count">0</span></a>
-      </div>
-
-      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
-        <ul>
-          <li><a href="shop.html" aria-current="page">Shop</a></li>
-          <li><a href="drops.html">Drops</a></li>
-          <li><a href="bands.html">Bands</a></li>
-          <li><a href="trade.html">Trade</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-    </div>
+<header class="hdr">
+  <a class="logo disp ink-sm" href="index.html" aria-label="Ripped to Shreds home"><span>Ripped to<br>Shreds</span></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="shop.html" aria-current="page">Shop</a>
+    <a href="wireframe/drops.html">Drops</a>
+    <a href="wireframe/bands.html">Bands</a>
+    <a href="wireframe/trade.html">Trade</a>
+    <a href="wireframe/about.html">About</a>
+  </nav>
+  <div class="util">
+    <button class="ibtn menu" type="button" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button>
+    <a class="ibtn" href="wireframe/search.html" aria-label="Search"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg></a>
+    <a class="ibtn" href="wireframe/cart.html" aria-label="Cart, 0 items"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 8h14l-1 13H6L5 8z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg><span class="badge">0</span></a>
   </div>
 </header>
 
-<main id="main">
-  <section class="section" aria-label="Product">
-    <div class="wrap">
-      <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li aria-current="page">Product Title</li></ol></nav>
-      <div class="pdp" style="margin-top:16px;">
-        <div class="gallery">
-          <div class="ph ph--portrait" role="img" aria-label="Main product image placeholder">Main Image</div>
-          <div class="thumbs">
-            <div class="ph">Img 1</div>
-            <div class="ph">Img 2</div>
-            <div class="ph">Img 3</div>
-            <div class="ph">Img 4</div>
-          </div>
-        </div>
+<section class="sec" aria-label="Product" style="padding-top: 40px;">
+  <nav class="crumb" aria-label="Breadcrumb" style="margin-bottom: 28px;"><ol><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li aria-current="page">Band tee</li></ol></nav>
 
-        <div class="pdp-info">
-          <span class="card-tag">Tag</span>
-          <h1>Product Title</h1>
-          <p class="pdp-price">$00</p>
-          <p class="card-meta">One of one. Secondhand, ships once.</p>
+  <div class="pdp">
+    <div class="gal">
+      <div class="thumbs">
+        <div class="cimg">Img 1</div>
+        <div class="cimg">Img 2</div>
+        <div class="cimg">Img 3</div>
+        <div class="cimg">Img 4</div>
+      </div>
+      <div class="cimg" role="img" aria-label="Main product photo placeholder" style="box-shadow: 10px 10px 0 #1E1A19; font-size: 13px;">
+        
+        
+        <span class="ctag">1 of 1</span>
+        Main photo
+      </div>
+    </div>
 
-          <div class="field">
-            <span class="label" id="size-label">Size</span>
-            <div class="options" role="group" aria-labelledby="size-label">
-              <button class="option" type="button" aria-pressed="false">S</button>
-              <button class="option" type="button" aria-pressed="true">M</button>
-              <button class="option" type="button" aria-pressed="false">L</button>
-            </div>
-            <p class="help">Measurements listed below. Wireframe shows size picker for multi-size items only.</p>
-          </div>
+    <div class="info">
+      <span class="tape">Secondhand / ships once</span>
+      <h1 class="disp pname ink">Band tee</h1>
+      <p class="pprice disp">$00</p>
+      <p style="color: var(--muted);">Product story and flaw notes go here. Call out stains, rips and repairs honestly. That is the charm.</p>
 
-          <a class="btn btn--solid btn--block" href="cart.html">Add to Cart</a>
-          <button class="btn btn--block" type="button">Save for Later</button>
-
-          <dl class="spec">
-            <div><dt>Condition</dt><dd>Good</dd></div>
-            <div><dt>Era</dt><dd>Decade</dd></div>
-            <div><dt>Pit to Pit</dt><dd>00 in</dd></div>
-            <div><dt>Length</dt><dd>00 in</dd></div>
-          </dl>
-
-          <div class="accordion">
-            <details open>
-              <summary>Description</summary>
-              <p>Product story and flaw notes placeholder. Call out stains, rips and repairs here.</p>
-            </details>
-            <details>
-              <summary>Shipping</summary>
-              <p>Shipping times and costs placeholder. Local pickup option.</p>
-            </details>
-            <details>
-              <summary>Returns</summary>
-              <p>Return policy placeholder for one-of-one secondhand items.</p>
-            </details>
-          </div>
+      <div style="width: 100%;">
+        <p class="lbl" id="size-label" style="margin-bottom: 10px;">Size</p>
+        <div class="sizes" role="group" aria-labelledby="size-label">
+          <button class="size" type="button" aria-pressed="false">S</button><button class="size" type="button" aria-pressed="true">M</button><button class="size" type="button" aria-pressed="false">L</button><button class="size" type="button" aria-pressed="false">XL</button>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="section section--alt" aria-labelledby="related-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 id="related-title">More Pulls</h2>
-        <a class="text-link" href="shop.html">View All</a>
-      </div>
-      <ul class="product-grid">
-        <li class="card">
-          <a class="card-link" href="product.html">
-            <div class="card-media ph">Image</div>
-            <span class="card-tag">Tag</span>
-            <h3 class="card-title">Product Title</h3>
-            <span class="card-meta">Size / Condition</span>
-            <span class="card-price">$00</span>
-          </a>
-          <button class="btn" type="button">Add</button>
-        </li>
-        <li class="card">
-          <a class="card-link" href="product.html">
-            <div class="card-media ph">Image</div>
-            <span class="card-tag">Tag</span>
-            <h3 class="card-title">Product Title</h3>
-            <span class="card-meta">Size / Condition</span>
-            <span class="card-price">$00</span>
-          </a>
-          <button class="btn" type="button">Add</button>
-        </li>
-        <li class="card">
-          <a class="card-link" href="product.html">
-            <div class="card-media ph">Image</div>
-            <span class="card-tag">Tag</span>
-            <h3 class="card-title">Product Title</h3>
-            <span class="card-meta">Size / Condition</span>
-            <span class="card-price">$00</span>
-          </a>
-          <button class="btn" type="button">Add</button>
-        </li>
-        <li class="card">
-          <a class="card-link" href="product.html">
-            <div class="card-media ph">Image</div>
-            <span class="card-tag">Tag</span>
-            <h3 class="card-title">Product Title</h3>
-            <span class="card-meta">Size / Condition</span>
-            <span class="card-price">$00</span>
-          </a>
-          <button class="btn" type="button">Add</button>
-        </li>
-      </ul>
-    </div>
-  </section>
-</main>
+      <a class="btn btn-solid btn-block" href="wireframe/cart.html">Add to cart</a>
+      <button class="btn btn-block" type="button">Save for later</button>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h2>Visit</h2>
-        <p>Street Address<br>City, State ZIP<br>Hours placeholder</p>
-      </div>
-      <div class="footer-col">
-        <h2>Shop</h2>
-        <a href="shop.html">All Products</a>
-        <a href="drops.html">Drops</a>
-        <a href="trade.html">Trade In</a>
-        <a href="guest-racks.html">Guest Racks</a>
-        <a href="popups.html">Pop-ups</a>
-      </div>
-      <div class="footer-col">
-        <h2>Help</h2>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="faq.html">Shipping and Returns</a>
-        <a href="account.html">Account</a>
-        <a href="cart.html">Cart</a>
-      </div>
-      <div class="footer-col">
-        <h2>Newsletter</h2>
-        <form class="newsletter" action="#" method="post">
-          <label for="email" class="visually-hidden">Email</label>
-          <input id="email" name="email" type="email" placeholder="Email" autocomplete="email">
-          <button class="btn btn--solid" type="submit">Sign Up</button>
-        </form>
+      <dl class="spec">
+        <div><dt>Condition</dt><dd>Worn in</dd></div>
+        <div><dt>Era</dt><dd>[Decade]</dd></div>
+        <div><dt>Pit to pit</dt><dd>00 in</dd></div>
+        <div><dt>Length</dt><dd>00 in</dd></div>
+      </dl>
+
+      <div class="acc">
+        <details open="">
+          <summary>Description</summary>
+          <p>Longer description and styling notes placeholder.</p>
+        </details>
+        <details>
+          <summary>Shipping</summary>
+          <p>Shipping times and costs placeholder.</p>
+        </details>
+        <details>
+          <summary>Returns</summary>
+          <p>Return policy for one of one secondhand pieces placeholder.</p>
+        </details>
       </div>
     </div>
-    <p class="legal">&copy; Ripped to Shreds. Wireframe placeholder. <a href="legal.html">Privacy and Terms</a></p>
   </div>
+</section>
+
+<section class="sec sec-alt" aria-labelledby="more-title">
+  <div class="sec-head">
+    <h2 class="disp h2 ink" id="more-title">More pulls</h2>
+    <a class="tlink" href="shop.html">View all</a>
+  </div>
+  <ul class="grid4">
+    
+      <li class="pcard">
+        <a class="pc-head" href="product.html">
+          <h3 class="pc-title">Flannel shirt</h3>
+          <p class="pc-sub">M / Good</p>
+        </a>
+        <a class="pc-media" href="product.html" aria-label="View Flannel shirt">
+          <div class="cimg">
+            <span class="ctag">New</span>
+            Photo
+          </div>
+        </a>
+        <div class="pc-foot">
+          <span class="disp pc-price">$00</span>
+          <button class="pc-add" type="button" aria-label="Add Flannel shirt to cart" aria-pressed="false">
+            <svg class="ic-plus" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg>
+            <svg class="ic-check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+          </button>
+        </div>
+      </li>
+    
+      <li class="pcard">
+        <a class="pc-head" href="product.html">
+          <h3 class="pc-title">Denim jacket</h3>
+          <p class="pc-sub">XL / Distressed</p>
+        </a>
+        <a class="pc-media" href="product.html" aria-label="View Denim jacket">
+          <div class="cimg">
+            <span class="ctag">1 of 1</span>
+            Photo
+          </div>
+        </a>
+        <div class="pc-foot">
+          <span class="disp pc-price">$00</span>
+          <button class="pc-add" type="button" aria-label="Add Denim jacket to cart" aria-pressed="false">
+            <svg class="ic-plus" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg>
+            <svg class="ic-check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+          </button>
+        </div>
+      </li>
+    
+      <li class="pcard">
+        <a class="pc-head" href="product.html">
+          <h3 class="pc-title">Leather belt</h3>
+          <p class="pc-sub">One size / Good</p>
+        </a>
+        <a class="pc-media" href="product.html" aria-label="View Leather belt">
+          <div class="cimg">
+            <span class="ctag">Local pick</span>
+            Photo
+          </div>
+        </a>
+        <div class="pc-foot">
+          <span class="disp pc-price">$00</span>
+          <button class="pc-add" type="button" aria-label="Add Leather belt to cart" aria-pressed="false">
+            <svg class="ic-plus" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg>
+            <svg class="ic-check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+          </button>
+        </div>
+      </li>
+    
+      <li class="pcard">
+        <a class="pc-head" href="product.html">
+          <h3 class="pc-title">Sequin top</h3>
+          <p class="pc-sub">S / Mint</p>
+        </a>
+        <a class="pc-media" href="product.html" aria-label="View Sequin top">
+          <div class="cimg">
+            <span class="ctag">New</span>
+            Photo
+          </div>
+        </a>
+        <div class="pc-foot">
+          <span class="disp pc-price">$00</span>
+          <button class="pc-add" type="button" aria-label="Add Sequin top to cart" aria-pressed="false">
+            <svg class="ic-plus" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg>
+            <svg class="ic-check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+          </button>
+        </div>
+      </li>
+    
+  </ul>
+</section>
+
+<footer class="ftr" id="about">
+  <div class="fgrid">
+    <div class="fcol">
+      <h2>Visit</h2>
+      <p>[Street address]<br>SoHud, Columbus<br>Tue-Sat 11-7<br>Sun 12-6<br>Mon closed for buying</p>
+    </div>
+    <div class="fcol">
+      <h2>Shop</h2>
+      <a href="shop.html">All products</a>
+      <a href="wireframe/drops.html">Drops</a>
+      <a href="wireframe/trade.html">Trade in</a>
+    </div>
+    <div class="fcol">
+      <h2>Help</h2>
+      <a href="wireframe/about.html">About</a>
+      <a href="wireframe/contact.html">Contact</a>
+      <a href="wireframe/cart.html">Cart</a>
+    </div>
+    <div class="fcol">
+      <h2>Newsletter</h2>
+      <form class="nl" action="#" method="post">
+        <label for="email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email">
+        <button class="btn btn-solid" type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+  <div class="disp big ink" aria-hidden="true">Ripped to Shreds</div>
+  <p class="legal">© Ripped to Shreds. All rights reserved.</p>
 </footer>
 
-<script src="script.js"></script>
+<svg class="grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  
+  <filter id="ink" x="-2%" y="-5%" width="104%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="4" result="w"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="w" scale="1.2" xChannelSelector="R" yChannelSelector="G" result="d"></feDisplacementMap><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="9" result="s"></feTurbulence><feColorMatrix in="s" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  10 0 0 0 -2.3" result="m"></feColorMatrix><feComposite in="d" in2="m" operator="in"></feComposite></filter>
+  <filter id="ink-sm" x="-2%" y="-5%" width="104%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="2" result="w"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="w" scale="0.8" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter>
+  
+</svg>
+
+</div>
+<script src="design.js"></script>
 </body>
 </html>
