@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shop Desktop</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;600;700&amp;family=Permanent+Marker&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div class="rts">
+
+<div class="strip">Store hours: Tue-Sat 11-7 / Sun 12-6 / Mon closed for buying</div>
+
+<header class="hdr">
+  <a class="logo disp ink-sm" href="Main.dc.html" aria-label="Ripped to Shreds home"><span>Ripped to<br>Shreds</span></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="Shop.dc.html" aria-current="page">Shop</a>
+    <a href="Main.dc.html#drops">Drops</a>
+    <a href="Main.dc.html#scene">Bands</a>
+    <a href="Main.dc.html#scene">Trade</a>
+    <a href="Main.dc.html#about">About</a>
+  </nav>
+  <div class="util">
+    <button class="ibtn menu" type="button" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button>
+    <a class="ibtn" href="Shop.dc.html" aria-label="Search"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg></a>
+    <a class="ibtn" href="#" aria-label="Cart, 0 items"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 8h14l-1 13H6L5 8z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg><span class="badge">0</span></a>
+  </div>
+</header>
+
+<section class="phead" aria-labelledby="shop-title">
+  <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="Main.dc.html">Home</a></li><li aria-current="page">Shop</li></ol></nav>
+  <h1 class="disp ink" id="shop-title" style="font-size: clamp(56px, 8cqw, 112px); font-family: &quot;Anton&quot;">The racks</h1>
+  <p>Everything is secondhand and most pieces are one of one. When it is gone, it is gone.</p>
+</section>
+
+<section class="sec" aria-label="Products">
+  <div class="shop">
+
+    <form class="fpanel" action="#" method="get" aria-label="Filters">
+      <span class="tape" style="align-self: flex-start;">Filters</span>
+      <fieldset class="fgroup">
+        <legend>Category</legend>
+        <label class="chk"><input type="checkbox" name="cat"> Tees</label>
+        <label class="chk"><input type="checkbox" name="cat"> Denim</label>
+        <label class="chk"><input type="checkbox" name="cat"> Jackets</label>
+        <label class="chk"><input type="checkbox" name="cat"> Flannels</label>
+        <label class="chk"><input type="checkbox" name="cat"> Accessories</label>
+      </fieldset>
+      <fieldset class="fgroup">
+        <legend>Size</legend>
+        <label class="chk"><input type="checkbox" name="size"> XS / S</label>
+        <label class="chk"><input type="checkbox" name="size"> M</label>
+        <label class="chk"><input type="checkbox" name="size"> L</label>
+        <label class="chk"><input type="checkbox" name="size"> XL +</label>
+      </fieldset>
+      <fieldset class="fgroup">
+        <legend>Condition</legend>
+        <label class="chk"><input type="checkbox" name="cond"> Mint</label>
+        <label class="chk"><input type="checkbox" name="cond"> Good</label>
+        <label class="chk"><input type="checkbox" name="cond"> Worn in</label>
+        <label class="chk"><input type="checkbox" name="cond"> Distressed</label>
+      </fieldset>
+      <button class="btn btn-solid btn-block" type="submit">Apply</button>
+    </form>
+
+    <div>
+      <div class="tbar">
+        <p class="mono" style="font-size: 13px; color: var(--muted);">00 items</p>
+        <div>
+          <label for="sort" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Sort</label>
+          <select class="sel" id="sort" name="sort">
+            <option>Newest</option>
+            <option>Price: low to high</option>
+            <option>Price: high to low</option>
+          </select>
+        </div>
+      </div>
+
+      <ul class="grid3">
+        <sc-for list="{{items}}" as="item" hint-placeholder-count="9">
+          <li class="pcard">
+        <a class="pc-head" href="Product.dc.html">
+          <h3 class="pc-title">{{item.title}}</h3>
+          <p class="pc-sub">{{item.meta}}</p>
+        </a>
+        <a class="pc-media" href="Product.dc.html" aria-label="View {{item.title}}">
+          <div class="cimg">
+            <span class="ctag">{{item.tag}}</span>
+            Photo
+          </div>
+        </a>
+        <div class="pc-foot">
+          <span class="disp pc-price">{{item.price}}</span>
+          <button class="pc-add" type="button" aria-label="Add {{item.title}} to cart" aria-pressed="{{item.pressed}}" onClick="{{item.toggle}}">
+            <sc-if value="{{item.notAdded}}" hint-placeholder-val="{{ true }}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg></sc-if>
+            <sc-if value="{{item.added}}" hint-placeholder-val="{{ false }}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg></sc-if>
+          </button>
+        </div>
+      </li>
+        </sc-for>
+      </ul>
+
+      <nav class="pager" aria-label="Pagination">
+        <a href="Shop.dc.html" aria-current="page">1</a>
+        <a href="Shop.dc.html">2</a>
+        <a href="Shop.dc.html">3</a>
+        <a href="Shop.dc.html">Next</a>
+      </nav>
+    </div>
+
+  </div>
+</section>
+
+<footer class="ftr" id="about">
+  <div class="fgrid">
+    <div class="fcol">
+      <h2>Visit</h2>
+      <p>[Street address]<br>SoHud, Columbus<br>Tue-Sat 11-7<br>Sun 12-6<br>Mon closed for buying</p>
+    </div>
+    <div class="fcol">
+      <h2>Shop</h2>
+      <a href="Shop.dc.html">All products</a>
+      <a href="Main.dc.html#drops">Drops</a>
+      <a href="Main.dc.html#scene">Trade in</a>
+    </div>
+    <div class="fcol">
+      <h2>Help</h2>
+      <a href="#about">About</a>
+      <a href="#about">Contact</a>
+      <a href="#">Cart</a>
+    </div>
+    <div class="fcol">
+      <h2>Newsletter</h2>
+      <form class="nl" action="#" method="post">
+        <label for="email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email">
+        <button class="btn btn-solid" type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+  <div class="disp big ink" aria-hidden="true">Ripped to Shreds</div>
+  <p class="legal">© Ripped to Shreds. All rights reserved.</p>
+</footer>
+
+<svg class="grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  
+  <filter id="ink" x="-2%" y="-5%" width="104%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="4" result="w"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="w" scale="1.2" xChannelSelector="R" yChannelSelector="G" result="d"></feDisplacementMap><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="9" result="s"></feTurbulence><feColorMatrix in="s" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  10 0 0 0 -2.3" result="m"></feColorMatrix><feComposite in="d" in2="m" operator="in"></feComposite></filter>
+  <filter id="ink-sm" x="-2%" y="-5%" width="104%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="2" result="w"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="w" scale="0.8" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter>
+  
+</svg>
+
+</div>
+<helmet><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&amp;display=swap"></helmet></x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2950}}'>
+class Component extends DCLogic {
+  state = { added: {} };
+  renderVals() {
+    return {
+      
+      items: [
+        { title: 'Band tee', meta: 'L / Worn in', price: '$00', tag: '1 of 1', taped: true },
+        { title: 'Flannel shirt', meta: 'M / Good', price: '$00', tag: 'New', taped: false },
+        { title: 'Denim jacket', meta: 'XL / Distressed', price: '$00', tag: '1 of 1', taped: false },
+        { title: 'Leather belt', meta: 'One size / Good', price: '$00', tag: 'Local pick', taped: false },
+        { title: 'Sequin top', meta: 'S / Mint', price: '$00', tag: 'New', taped: true },
+        { title: 'Cargo pants', meta: '32 / Worn in', price: '$00', tag: '1 of 1', taped: false },
+        { title: 'Zip hoodie', meta: 'M / Good', price: '$00', tag: 'New', taped: false },
+        { title: 'Studded cuff', meta: 'One size / Good', price: '$00', tag: 'Local pick', taped: false },
+        { title: 'Work jacket', meta: 'L / Worn in', price: '$00', tag: '1 of 1', taped: true }
+      ].map((it, i) => ({ ...it, added: !!this.state.added[i], notAdded: !this.state.added[i], pressed: this.state.added[i] ? 'true' : 'false', toggle: () => this.setState({ added: { ...this.state.added, [i]: !this.state.added[i] } }) }))
+    };
+  }
+}
+</script>
+</body>
+</html>

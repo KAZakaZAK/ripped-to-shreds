@@ -46,3 +46,7 @@ Styled design pass lives in `design/` (home, shop, product). Same structure as t
 - `design/tex-dark.png` Speckle texture
 
 Live: https://kazakazak.github.io/ripped-to-shreds/design/
+
+## Design source
+
+`design-source/` holds the Claude Design boards (`*.dc.html`) and shared `site.css`, as a record of the original design files. They need the Claude Design viewer to render, so use `design/` for the browser version.

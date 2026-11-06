@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Product Card</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.pcard{width:360px;background:#F7F4EE;border:3px solid #1E1A19;padding:24px;display:grid;gap:16px}
+.pc-head{display:grid;gap:4px;text-decoration:none}
+.pc-title{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:34px;line-height:1}
+.pc-sub{font:400 12px 'Space Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#4A4642}
+.pc-media{display:block;text-decoration:none}
+.pc-media .cimg{border:0}
+.pc-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
+.pc-price{display:grid;gap:2px}
+.pc-price .disp{font-size:32px;line-height:1}
+.pc-add{width:48px;height:48px;display:inline-flex;align-items:center;justify-content:center;border:3px solid #1E1A19;background:#1E1A19;color:#FFFFFF;cursor:pointer;padding:0;flex:0 0 auto}
+.pc-add:hover{background:#F0D6CB;color:#1E1A19;border-color:#1E1A19}
+.pc-add[aria-pressed="true"]{background:#F0D6CB;color:#1E1A19}
+.pc-add:focus-visible,.pc-head:focus-visible,.pc-media:focus-visible{outline:3px solid #323B34;outline-offset:3px}
+</style>
+</helmet>
+<div class="rts" style="width: 480px; height: 700px; display: flex; align-items: center; justify-content: center;">
+  <article class="pcard">
+    <a class="pc-head" href="Product.dc.html">
+      <h3 class="pc-title">Band tee</h3>
+      <p class="pc-sub">L / Worn in</p>
+    </a>
+    <a class="pc-media" href="Product.dc.html" aria-label="View Band tee">
+      <div class="cimg">
+        <span class="ctag">1 of 1</span>
+        Photo
+      </div>
+    </a>
+    <div class="pc-foot">
+      <div class="pc-price">
+        <span class="disp">$00</span>
+        <span class="cmeta">One of one</span>
+      </div>
+      <button class="pc-add" type="button" aria-label="Add Band tee to cart" aria-pressed="{{pressed}}" onClick="{{toggle}}">
+        <sc-if value="{{notAdded}}" hint-placeholder-val="{{ true }}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg></sc-if>
+        <sc-if value="{{added}}" hint-placeholder-val="{{ false }}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg></sc-if>
+      </button>
+    </div>
+  </article>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":480,"height":700}}'>
+class Component extends DCLogic {
+  state = { added: false };
+  renderVals() {
+    const a = this.state.added;
+    return {
+      added: a,
+      notAdded: !a,
+      pressed: a ? 'true' : 'false',
+      toggle: () => this.setState({ added: !this.state.added })
+    };
+  }
+}
+</script>
+</body>
+</html>
