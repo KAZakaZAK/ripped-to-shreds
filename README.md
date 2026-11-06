@@ -33,3 +33,16 @@ Structure-only wireframe for the Ripped to Shreds web store. No brand styling ap
 ## Preview
 
 Open `index.html` locally, or enable GitHub Pages from the main branch root.
+
+## Design
+
+Styled design pass lives in `design/` (home, shop, product). Same structure as the wireframe, with the cut-paper headline, speckle texture, new product card and hover states. Responsive via container queries.
+
+- `design/index.html` Home
+- `design/shop.html` Shop
+- `design/product.html` Product
+- `design/site.css` Design styles
+- `design/design.js` Menu toggle, add to cart toggle and size picker
+- `design/tex-dark.png` Speckle texture
+
+Live: https://kazakazak.github.io/ripped-to-shreds/design/
