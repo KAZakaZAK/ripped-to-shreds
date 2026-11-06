@@ -15,6 +15,14 @@ Structure-only wireframe for the Ripped to Shreds web store. No brand styling ap
 - `trade.html` Trade in policy and pre-submit form
 - `about.html` About, hours and map
 - `contact.html` Contact
+- `search.html` Search results and no results state
+- `account.html` Sign in, create account and signed in view
+- `order-confirmation.html` Order confirmation
+- `faq.html` Shipping, returns and FAQ
+- `guest-racks.html` Guest racks and host a rack form
+- `popups.html` Upcoming and past pop-ups
+- `legal.html` Privacy and terms
+- `404.html` Page not found
 
 ## Files
 
