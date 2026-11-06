@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout | Ripped to Shreds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;600;700&amp;family=Archivo+Black&amp;family=Road+Rage&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+<body>
+<div class="rts">
+
+<div class="strip">Store hours: Tue-Sat 11-7 / Sun 12-6 / Mon closed for buying</div>
+
+<header class="hdr">
+  <a class="logo disp ink-sm" href="index.html" aria-label="Ripped to Shreds home"><span>Ripped to<br>Shreds</span></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="shop.html">Shop</a>
+    <a href="drops.html">Drops</a>
+    <a href="bands.html">Bands</a>
+    <a href="trade.html">Trade</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="util">
+    <button class="ibtn menu" type="button" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button>
+    <a class="ibtn" href="search.html" aria-label="Search"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg></a>
+    <a class="ibtn" href="cart.html" aria-label="Cart, 0 items"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 8h14l-1 13H6L5 8z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg><span class="badge">0</span></a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="phead">
+    <div class="wrap">
+      <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="cart.html">Cart</a></li><li aria-current="page">Checkout</li></ol></nav>
+      <h1>Checkout</h1>
+      <p>Guest checkout. Account creation optional after purchase.</p>
+    </div>
+  </section>
+
+  <section class="sec" aria-label="Checkout form">
+    <div class="wrap">
+      <div class="cart-layout">
+        <form class="form" action="#" method="post">
+
+          <div class="checkout-block">
+            <h2>1. Contact</h2>
+            <div class="field"><label for="c-email">Email</label><input id="c-email" type="email" autocomplete="email"></div>
+            <label class="check"><input type="checkbox"> Email me about new drops</label>
+          </div>
+
+          <div class="checkout-block">
+            <h2>2. Delivery</h2>
+            <div class="field-row">
+              <div class="field"><label for="fn">First Name</label><input id="fn" type="text" autocomplete="given-name"></div>
+              <div class="field"><label for="ln">Last Name</label><input id="ln" type="text" autocomplete="family-name"></div>
+            </div>
+            <div class="field"><label for="addr">Address</label><input id="addr" type="text" autocomplete="street-address"></div>
+            <div class="field-row">
+              <div class="field"><label for="city">City</label><input id="city" type="text"></div>
+              <div class="field"><label for="zip">ZIP</label><input id="zip" type="text" inputmode="numeric"></div>
+            </div>
+            <div class="field">
+              <label for="ship">Method</label>
+              <select id="ship">
+                <option>Standard Shipping</option>
+                <option>Local Pickup</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="checkout-block">
+            <h2>3. Payment</h2>
+            <div class="ph" style="min-height:160px;" role="img" aria-label="Payment module placeholder">Payment Provider Module</div>
+          </div>
+
+          <button class="btn btn-solid btn-block" type="submit">Place Order</button>
+        </form>
+
+        <aside class="summary" aria-labelledby="co-sum">
+          <h2 id="co-sum">Your Order</h2>
+          <div class="summary-row"><span>Product Title x1</span><span>$00</span></div>
+          <div class="summary-row"><span>Product Title x1</span><span>$00</span></div>
+          <div class="summary-row"><span>Product Title x1</span><span>$00</span></div>
+          <div class="summary-row"><span>Shipping</span><span>$00</span></div>
+          <div class="summary-row summary-row--total"><span>Total</span><span>$00</span></div>
+          <a class="tlink" href="cart.html">Edit Cart</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr" id="about">
+  <div class="fgrid">
+    <div class="fcol">
+      <h2>Visit</h2>
+      <p>[Street address]<br>SoHud, Columbus<br>Tue-Sat 11-7<br>Sun 12-6<br>Mon closed for buying</p>
+    </div>
+    <div class="fcol">
+      <h2>Shop</h2>
+      <a href="shop.html">All products</a>
+      <a href="drops.html">Drops</a>
+      <a href="trade.html">Trade in</a>
+    </div>
+    <div class="fcol">
+      <h2>Help</h2>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+      <a href="legal.html">Legal</a>
+      <a href="cart.html">Cart</a>
+    </div>
+    <div class="fcol">
+      <h2>Newsletter</h2>
+      <form class="nl" action="#" method="post">
+        <label for="email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email">
+        <button class="btn btn-solid" type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+  <div class="disp big ink" aria-hidden="true">Ripped to Shreds</div>
+  <p class="legal">© Ripped to Shreds. All rights reserved.</p>
+</footer>
+
+<svg class="grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="fill: none">
+  
+  <filter id="ink" x="-2%" y="-5%" width="104%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="4" result="w"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="w" scale="1.2" xChannelSelector="R" yChannelSelector="G" result="d"></feDisplacementMap><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="9" result="s"></feTurbulence><feColorMatrix in="s" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  10 0 0 0 -2.3" result="m"></feColorMatrix><feComposite in="d" in2="m" operator="in"></feComposite></filter>
+  <filter id="ink-sm" x="-2%" y="-5%" width="104%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="2" result="w"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="w" scale="0.8" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter>
+  
+</svg>
+
+</div>
+<script src="design.js"></script>
+</body>
+</html>

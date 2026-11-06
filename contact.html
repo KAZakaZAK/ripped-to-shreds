@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Ripped to Shreds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;600;700&amp;family=Archivo+Black&amp;family=Road+Rage&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+<body>
+<div class="rts">
+
+<div class="strip">Store hours: Tue-Sat 11-7 / Sun 12-6 / Mon closed for buying</div>
+
+<header class="hdr">
+  <a class="logo disp ink-sm" href="index.html" aria-label="Ripped to Shreds home"><span>Ripped to<br>Shreds</span></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="shop.html">Shop</a>
+    <a href="drops.html">Drops</a>
+    <a href="bands.html">Bands</a>
+    <a href="trade.html">Trade</a>
+    <a href="about.html" aria-current="page">About</a>
+  </nav>
+  <div class="util">
+    <button class="ibtn menu" type="button" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button>
+    <a class="ibtn" href="search.html" aria-label="Search"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg></a>
+    <a class="ibtn" href="cart.html" aria-label="Cart, 0 items"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 8h14l-1 13H6L5 8z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg><span class="badge">0</span></a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="phead">
+    <div class="wrap">
+      <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol></nav>
+      <h1>Contact</h1>
+      <p>Questions, consignment pitches, band collabs and order help.</p>
+    </div>
+  </section>
+
+  <section class="sec" aria-label="Contact form">
+    <div class="wrap">
+      <div class="split split--wide-left">
+        <form class="form" action="#" method="post">
+          <div class="field-row">
+            <div class="field"><label for="k-name">Name</label><input id="k-name" type="text" autocomplete="name"></div>
+            <div class="field"><label for="k-email">Email</label><input id="k-email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="field">
+            <label for="k-topic">Topic</label>
+            <select id="k-topic">
+              <option>Order Help</option>
+              <option>Consignment</option>
+              <option>Band Collab</option>
+              <option>Press</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label for="k-msg">Message</label><textarea id="k-msg"></textarea></div>
+          <button class="btn btn-solid" type="submit">Send</button>
+        </form>
+
+        <div class="panel">
+          <h3>Direct</h3>
+          <ul>
+            <li>Email placeholder</li>
+            <li>Phone placeholder</li>
+            <li>Instagram placeholder</li>
+          </ul>
+          <h3>Find Us</h3>
+          <p>Street Address<br>City, State ZIP</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr" id="about">
+  <div class="fgrid">
+    <div class="fcol">
+      <h2>Visit</h2>
+      <p>[Street address]<br>SoHud, Columbus<br>Tue-Sat 11-7<br>Sun 12-6<br>Mon closed for buying</p>
+    </div>
+    <div class="fcol">
+      <h2>Shop</h2>
+      <a href="shop.html">All products</a>
+      <a href="drops.html">Drops</a>
+      <a href="trade.html">Trade in</a>
+    </div>
+    <div class="fcol">
+      <h2>Help</h2>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+      <a href="legal.html">Legal</a>
+      <a href="cart.html">Cart</a>
+    </div>
+    <div class="fcol">
+      <h2>Newsletter</h2>
+      <form class="nl" action="#" method="post">
+        <label for="email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email">
+        <button class="btn btn-solid" type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+  <div class="disp big ink" aria-hidden="true">Ripped to Shreds</div>
+  <p class="legal">© Ripped to Shreds. All rights reserved.</p>
+</footer>
+
+<svg class="grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="fill: none">
+  
+  <filter id="ink" x="-2%" y="-5%" width="104%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="4" result="w"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="w" scale="1.2" xChannelSelector="R" yChannelSelector="G" result="d"></feDisplacementMap><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="9" result="s"></feTurbulence><feColorMatrix in="s" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  10 0 0 0 -2.3" result="m"></feColorMatrix><feComposite in="d" in2="m" operator="in"></feComposite></filter>
+  <filter id="ink-sm" x="-2%" y="-5%" width="104%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="2" result="w"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="w" scale="0.8" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter>
+  
+</svg>
+
+</div>
+<script src="design.js"></script>
+</body>
+</html>

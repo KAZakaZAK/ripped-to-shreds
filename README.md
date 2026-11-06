@@ -19,3 +19,7 @@ Nav items on the styled pages that are not designed yet (drops, bands, trade, ab
 ## Preview
 
 Open `index.html` locally, or use GitHub Pages from the main branch root.
+
+
+## Update
+All pages now carry the styled design (site.css + pages.css). The structure-only wireframes remain in `wireframe/`.
