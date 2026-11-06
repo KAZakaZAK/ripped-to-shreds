@@ -8,6 +8,7 @@ Structure-only wireframe for the Ripped to Shreds web store. No brand styling ap
 - `shop.html` Collection with filters, sort and pagination
 - `product.html` Product detail
 - `cart.html` Cart
+- `cart-empty.html` Empty cart and expired hold states
 - `checkout.html` Checkout
 - `drops.html` Drops with countdown and archive
 - `bands.html` Band spotlight index
